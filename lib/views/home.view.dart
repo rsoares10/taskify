@@ -76,11 +76,11 @@ class _HomeViewState extends State<HomeView> {
                     ),
                   ),
                 ),
-                RaisedButton(
+                ElevatedButton(
                   onPressed: _addTask,
-                  color: Colors.blueAccent,
+                  // color: Colors.blueAccent,
                   child: Text('ADD'),
-                  textColor: Colors.white,
+                  // textColor: Colors.white,
                 ),
               ],
             ),
@@ -127,8 +127,9 @@ class _HomeViewState extends State<HomeView> {
           ),
         );
 
-        Scaffold.of(context).removeCurrentSnackBar();
-        Scaffold.of(context).showSnackBar(snack);
+        // TODO: refactor thefollowing two lines
+        // Scaffold.of(context).removeCurrentSnackBar();
+        // Scaffold.of(context).showSnackBar(snack);
       },
       background: Container(
         color: Colors.red,
